@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Montserrat:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+body {
+  outline: red;
+}
+
+.contaier {
+  max-width: 1920px;
+  height: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 400px;
+  background-image: url(./img/BMW.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 50px;
+  color: #fff;
+}
+
+.test  {
+  display: flex;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 1400px;
+}
+.airport_pickup {
+  border: 1px solid #083a82;
+  margin: 10px;
+  
+}
+.chauffer_services {
+  border: 1px solid #083a82;
+  margin: 10px;
+}
+
+.background__text {
+  width: 100px;
+  background: #083a82;
+  color: #fff;
+  padding: 3px;
+}
+
+.airport_pickup__text {
+  font-size: 20px;
+  padding: 15px;
+  line-height: 34px;
+}
+
+.div__title {
+  display: flex;
+  margin-left: 250px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+
+.car__image {
+  width: 80%;
+  height: 80%;
+  margin-left: 100px;
+}
+
+/* FAQ */
+
+.FAQ {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.FAQ__info {
+}
+.FAQ__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.FAQ__questions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 900px;
+}
+.FAQ__question {
+  border: 1px solid #083a82;
+  border-radius: 20px;
+  padding-left: 15px;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.FAQ__question__title {
+  font-size: 16px;
+}
+
+.FAQ__text {
+  display: none;
+    width: 895px;
+    height: 37px;
+    border-radius: 0 0 10px 10px;
+    padding: 9px;
+    border: 2px solid #00398a;
+    border-top: none;
+    /* margin-top: 30px; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.FAQ__question {
+  margin-top: 15px;
+}
+
+.FAQ__text--open {
+  display: block;
+  max-height: 1000px;
+  width: 868px;
+  margin-left: 13px;
+}
+
+.plus, .minus  {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  bottom: 10px;
+}
+.minus {
+  display: none;
+}
+
+
+@media (max-width: 900px) {
+  .FAQ__questions {
+    width: 700px;
+  }
+
+  .FAQ__text--open  {
+    width: 677px;
+    height: 42px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .test {
+    flex-direction: column;
+  }
+  .title2 {
+    display: none;
+  }
+
+  .FAQ__text {
+    width: 670px;
+    padding: 10px;
+    margin-left: 14px;
+  }
+}
+@media (max-width: 426px) {
+  .title {
+    font-size: 22px;
+  }
+  .FAQ__text {
+    width: 395px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 700px) {
+  .FAQ__questions {
+    width: 400px;
+  }
+  .FAQ__question__title {
+    font-size: 11.5px;
+  }
+
+  .plus, .minus {
+    bottom: 7px;
+  }
+}
+
+@media (max-width: 409px) {
+  .FAQ__questions {
+    width: 400px;
+  }
+  .FAQ__question__title {
+    font-size: 9px;
+  }
+
+  .plus, .minus {
+    bottom: 7px;
+  }
+}
+
+@media (max-width: 500px) {
+  .airport_pickup__text {
+    font-size: 15px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .car__image {
+    width: 400px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .FAQ__title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 410px) {
+  .FAQ__title {
+    font-size: 25px;
+  }
+
+  .car__image {
+    width: 350px;
+  }
+
+  .FAQ__questions {
+    width: 350px;
+  }
+}
+
+@media (max-width: 376px) {
+  .airport_pickup__text {
+    font-size: 15px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .car__image {
+    width: 400px;
+    margin-left: 15px;
+  }
+
+  .FAQ__questions {
+    width: 350px;
+  }
+  .FAQ__question__title {
+    font-size: 10px;
+  }
+  .FAQ__text {
+    width: 300px;
+    padding: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .airport_pickup__text {
+    font-size: 12px;
+  }
+  .title {
+    font-size: 17px;
+  }
+  .car__image {
+    width: 300px;
+    margin-left: 15px;
+  }
+
+  .FAQ__questions {
+    width: 300px;
+  }
+  .FAQ__question__title {
+    font-size: 10px;
+  }
+
+  .header__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 376px) {
+  .airport_pickup__text {
+    font-size: 12px;
+  }
+  .title {
+    font-size: 17px;
+  }
+  .car__image {
+    width: 300px;
+    margin-left: 15px;
+  }
+
+  .FAQ__questions {
+    width: 320px;
+  }
+  .FAQ__question__title {
+    font-size: 8px;
+  }
+
+  .plus, .minus {
+    bottom: 5px;
+  }
+}
+
+
+@media (max-width: 376px  ) {
+  .FAQ__text--open {
+    width: 307px;
+    height: 32px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 320px  ) {
+  .FAQ__title {
+    font-size: 17px;
+  }
+  .FAQ__question {
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 302px;
+  }
+
+  .FAQ__text--open  {
+    width: 288px;
+    padding: 4px;
+    font-size: 11px;
+    height: 33px;
+    margin-left: 17px;
+  }
+}
+@media (max-width: 700px  ) {
+  .FAQ__text--open  {
+    width: 373px;
+    padding: 4px;
+    font-size: 13px;
+    height: 43px;
+    margin-left: 12px;
+  }
+}
+
+@media (max-width: 410px  ) {
+  .FAQ__text--open  {
+    width: 345px;
+    height: 46px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 376px  ) {
+  .FAQ__text--open  {
+    width: 294px;
+    height: 40px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 320px  ) {
+  .FAQ__text--open  {
+    width: 276px;
+    padding: 4px;
+    font-size: 10px;
+    height: 38px;
+    margin-left: 22px;
+  }
+}
